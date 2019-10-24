@@ -6,14 +6,25 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="main.css" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+	</style>
 </head> 
 <body>
 	<header class="ins-header">	
 		<a class="logo"><img src="images/logo.png" alt="Daria Doga Traveling" title="Daria Doga Traveling"></a>
 		<div class="container">
 		<nav>
-			<ul>
+			<ul class="navbar navbar-inverse" data-spy="affix" data-offset-top="0">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="information.html">Information</a></li>
 				<li><a href="about_me.html">About me</a></li>
